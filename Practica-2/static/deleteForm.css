@@ -1,0 +1,54 @@
+.DeleteForm{
+    display: flex;
+  
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid #e5e7eb;
+    border-color: #2d5888;
+    border-width: 0.25rem;
+    margin: 1rem auto;
+    padding: 0.5rem;
+    width: 47rem;
+    height: 18rem;
+    background-color: #fff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+  
+  
+    h1{
+      font-size: 2rem;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      background-image: linear-gradient(to right, red,  green, blue,  violet);
+      background-clip: text;
+      color: transparent;
+      animation: slideColors  linear infinite;
+    }
+  
+    input{
+      width: 16rem;
+      margin-bottom: 20px;
+      padding: 0.5rem;
+      border: 1px solid #ced4da;
+      border-radius: 5px;
+      font-size: 16px;
+  }
+  
+    button{
+      width: 28%;
+      padding: 0.5rem;
+      border: #27803c;
+      border-radius: 10px;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      font-size: 20px;
+      color: #ffffff;
+      background-color: #b60000;
+      cursor: pointer;
+  }
+  
+    button:hover{
+      background-color: #e52a00;
+    }
+  
+    .img.As{
+      margin: 3rem;
+    }
+  }

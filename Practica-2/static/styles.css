@@ -1,0 +1,163 @@
+@import url("/addForm.css");
+@import url("/menu.css");
+@import url("/searchForm.css");
+@import url("/deleteForm.css");
+
+
+body{
+  animation: changeBackgroundColor 15s infinite;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 15px;
+}
+
+.layout {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+  align-items: center;
+}
+
+.title{
+  text-align: center;
+  font-weight: bolder;
+  padding: 5px top;
+  font-size: 2rem;
+  animation: changeColor 6s infinite;
+  margin: 20px;
+  border-radius: 10px;
+  text-decoration: underline;
+}
+
+
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+
+
+
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.flex-start {
+  justify-content: flex-start;
+}
+
+.flex-around {
+  justify-content: space-around;
+}
+
+
+img {
+  width: 200px;
+  height: 200px;
+  border-radius: 10%;
+}
+
+
+
+.text-name {
+  text-overflow: ellipsis;
+  width: 100%;
+  text-align: center;
+  text-align: center;
+  padding: 5%;
+  background-image: linear-gradient(to right, red,  green, blue,  violet);
+  background-clip: text;
+  animation: changeColor 6s infinite;
+}
+
+
+
+.poke-container {
+  overflow: hidden;  
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  margin: 0px;
+  padding: 10px;
+  width: 300px;
+}
+
+.poke-container:hover {
+  background-color: #ffc2fa;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.1);
+}
+
+
+.name{
+  text-align: center;
+  font-size: 2em;
+  margin: 20px;
+  color: black;
+}
+
+
+.sound{
+  width: 300px;
+}
+
+.BtnEliminate{
+  height: 2rem;
+  width: 7rem;
+  font-size: 1rem;
+  border-radius: 10px;
+  color: aliceblue;
+  border:white;
+  background-color: rgb(179, 55, 55);
+  &:hover{
+   background-color: rgb(255, 0, 0);
+   cursor: pointer;
+  }
+}
+
+@keyframes slideColors {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 0%;
+  }
+}
+
+@keyframes changeColor {
+  0% {
+    color: red;
+  }
+  33% {
+    color: rgb(0, 199, 73);
+  }
+  66% {
+    color: rgb(0, 221, 192);
+  }
+  100% {
+    color: rgb(220, 47, 131);
+  }
+}
+
+@keyframes changeBackgroundColor {
+  0% {
+    background-color: #ffcccc;
+  }
+  33% {
+    background-color: #ccffcc;
+  }
+  66% {
+    background-color: #ccccff;
+  }
+  100% {
+    background-color: #ffcccc;
+  }
+}
