@@ -21,7 +21,7 @@ export const Form: FunctionComponent = () => {
     const checkPoke = await checkPokemon(name);
 
     if (checkPoke) {
-      window.location.href = `/pokemon/${name}`;
+      window.location.href = `/${name}`;
     } else {
       setError("Pokemon not found");
       return;
