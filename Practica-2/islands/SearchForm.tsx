@@ -45,7 +45,6 @@ export const Form: FunctionComponent = () => {
     <div class="form">
       <h1>Buscar un Pokemon</h1>
       <form
-        action="/search"
         method="GET"
         onSubmit={submitHandler}
       >
